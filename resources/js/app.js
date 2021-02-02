@@ -28,9 +28,12 @@ Vue.component('app-home', require('./components/AppHome.vue').default);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
 import router from './Router/router';
+import vuetify from '../plugin/vuetify';
 
 const app = new Vue({
+    vuetify,
     el: '#app',
     router,
 });

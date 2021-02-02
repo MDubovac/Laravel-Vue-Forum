@@ -1,29 +1,20 @@
 <template>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Forum App</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ask Question</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <v-toolbar>
+        <v-toolbar-title>Forum App</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+        <v-toolbar-items class="hidden-sm-and-down">
+            <v-btn text>Forum</v-btn>
+            <v-btn text>Ask question</v-btn>
+            <v-btn text>Category</v-btn>
+            <v-btn text>
+                  <router-link style="text-decoration:none; color:inherit" to="/login">Login</router-link>
+            </v-btn>
+        </v-toolbar-items>
+  </v-toolbar>
 </template>
+
 
 <script>
     export default {
