@@ -1,6 +1,8 @@
 <template>
   <v-toolbar>
-        <v-toolbar-title>Forum App</v-toolbar-title>
+        <v-toolbar-title>
+          Forum App
+        </v-toolbar-title>
 
         <v-spacer></v-spacer>
 
@@ -17,7 +19,9 @@
 
 
 <script>
-    export default {
-      
-    }
+
 </script>
+
+<style>
+
+</style>
